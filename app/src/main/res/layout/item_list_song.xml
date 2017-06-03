@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_list_song_total"
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:layout_height="wrap_content"
+        android:background="@color/back"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:inputType="text|textCapSentences|textMultiLine"
+            android:text="Yêu Quá Đi"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_name_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Karik"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+</LinearLayout>

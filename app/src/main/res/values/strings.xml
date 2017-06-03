@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mp3Online</string>
+    <string name="Loading">Loading....</string>
+    <string name="pattern">\</string>
+    <string name="transitionImageView">image</string>
+    <string name="transitionTitle">title</string>
+</resources>

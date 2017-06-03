@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_boss_app"
+    android:background="@color/indigo"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/pink"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/white">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_activity"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:layout_height="0dp"></android.support.v4.view.ViewPager>
+    <LinearLayout
+       android:id="@+id/ll_show_strat_song_activity"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <include
+            layout="@layout/show_action_strat">
+        </include>
+
+    </LinearLayout>
+
+</LinearLayout>

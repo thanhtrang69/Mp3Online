@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_list_show_song_strat_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ci_album_notifacation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_song_button_notifacation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:ellipsize="end"
+                android:inputType="text|textCapSentences|textMultiLine"
+                android:maxLines="1"
+                android:text="Yêu Quá Đi"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_name_author_button_notifacation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:inputType="text|textCapSentences|textMultiLine"
+                android:maxLines="1"
+                android:text="Karik"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:background="@color/pink"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/img_previous_notifacation"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/pink"
+                android:src="@drawable/ic_skip_previous_white_24dp" />
+
+
+            <ImageView
+                android:id="@+id/img_play_song_notifacation"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="2"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pause"/>
+
+
+            <ImageView
+                android:id="@+id/img_next_song_notifacation"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/pink"
+                android:src="@drawable/ic_skip_next_white_24dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
